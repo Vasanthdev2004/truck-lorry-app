@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lvl_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/input_round_box"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_trak"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/trak" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txt_trackname"
+                    style="@style/Font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_map_pin_small"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|start"
+                    android:singleLine="true"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/txt_location2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_map_pin_small"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:gravity="center|start"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_vnumber"
+                    style="@style/Font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_weight"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:text="3 Tonnes" />
+
+            <TextView
+                android:id="@+id/txt_routs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_route"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:text="3 Routes" />
+
+            <TextView
+                android:id="@+id/txt_rc_verified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_unverified"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:text="RC Verified" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_round_box"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgs"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trak"
+                    app:shapeAppearance="@style/ShapeAppearanceOverlay.Avatar"
+                    app:strokeColor="@color/gray0"
+                    app:strokeWidth="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txt_rates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_star"
+                        android:drawablePadding="5dp"
+                        android:text=""
+                        android:textColor="@color/purple_700" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_booknow"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/info"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
