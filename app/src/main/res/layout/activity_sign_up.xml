@@ -28,12 +28,15 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
+                android:background="#3693ED"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="170dp"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/applogo"
-                    android:layout_height="wrap_content"/>
+                    app:srcCompat="@drawable/applogo" />
 
             </LinearLayout>
 
@@ -47,7 +50,8 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="10dp" />
+                    android:layout_height="10dp"
+                    android:background="#FFFFFF" />
 
                 <TextView
                     style="@style/Font"
@@ -247,10 +251,11 @@
                     <!--this is the actual edit text which takes the input-->
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edit_refercode"
-                        android:inputType="text"
-
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+
+                        android:layout_height="wrap_content"
+                        android:background="#E91414"
+                        android:inputType="text" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -282,8 +287,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Term and Conditions "
-                            android:textColor="@color/purple_700" />
+                            android:background="#3693ED"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="Terms and Conditions "
+                            android:textColor="#3693ED" />
 
 
                     </LinearLayout>
@@ -300,7 +307,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
-                    android:background="@drawable/rounded_button"
+                    android:background="#3693ED"
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/sign_up"
@@ -330,10 +337,11 @@
                         style="@style/Font"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@color/bgcolor"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="@string/login"
-                        android:textColor="@color/purple_700" />
+                        android:textColor="#3693ED" />
 
 
                 </LinearLayout>
