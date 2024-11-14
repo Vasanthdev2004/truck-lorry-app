@@ -192,7 +192,7 @@
                     android:gravity="right"
                     android:padding="5dp"
                     android:text="@string/forgot_password"
-                    android:textColor="#3693ED" />
+                    android:textColor="#77b5fe" />
             </LinearLayout>
 
             <View
@@ -207,7 +207,7 @@
                 android:layout_marginStart="12dp"
 
                 android:layout_marginEnd="12dp"
-                android:background="#3693ED"
+                android:background="#77b5fe"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="@string/login" />
@@ -240,7 +240,7 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/sign_up"
-                    android:textColor="#3693ED" />
+                    android:textColor="#77b5fe" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
