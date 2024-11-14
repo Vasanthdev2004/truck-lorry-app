@@ -21,10 +21,10 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="307dp"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/login"
-                app:srcCompat="@drawable/login"
+                android:src="@drawable/designer"
+                app:srcCompat="@drawable/designer"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
 

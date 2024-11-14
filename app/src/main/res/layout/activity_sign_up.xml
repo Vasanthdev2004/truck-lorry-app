@@ -9,7 +9,7 @@
     tools:context=".ui.SignUpActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:rotation="5"
         android:src="@drawable/linetwo" />
@@ -33,10 +33,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/applogo"
-                    app:srcCompat="@drawable/applogo" />
+                    android:layout_width="208dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/applogo1"
+                    app:srcCompat="@drawable/applogo1" />
 
             </LinearLayout>
 
