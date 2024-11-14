@@ -23,8 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="307dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/login"
-                app:srcCompat="@drawable/login"
+                android:src="@drawable/login_home"
+                app:srcCompat="@drawable/login_home"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
 
