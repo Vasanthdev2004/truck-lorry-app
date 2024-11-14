@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Movers Lorry</string>
+    <string name="app_name" translatable="false">RuRu Truck</string>
     <string name="api_key" translatable="false">*****************************</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
