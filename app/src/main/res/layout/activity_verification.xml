@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,13 +28,15 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
+                android:background="#26A8FA"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="170dp"
-                    android:src="@drawable/applogo"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/applogo1"
+                    app:srcCompat="@drawable/applogo1" />
             </LinearLayout>
 
             <LinearLayout
@@ -169,17 +172,18 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/resend_code"
-                    android:textColor="@color/purple_700" />
+                    android:textColor="#26A8FA" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="20dp" />
+
                 <TextView
                     android:id="@+id/btn_verifyaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
-                    android:background="@drawable/rounded_button"
+                    android:background="#26A8FA"
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/verify_account"
