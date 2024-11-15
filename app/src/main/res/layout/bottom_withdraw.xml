@@ -191,7 +191,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rounded_button"
+                    android:background="#26A8FA"
                     android:gravity="center"
                     android:text="@string/proceed"
                     android:textColor="@color/white"

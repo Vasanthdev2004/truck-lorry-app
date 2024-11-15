@@ -89,7 +89,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rounded_button"
+            android:background="#26A8FA"
             android:gravity="center"
             android:text="@string/rate_to"
             android:textColor="@color/white"
