@@ -288,6 +288,7 @@
                         style="@style/AppTheme.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#26A8FA"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="@string/next" />

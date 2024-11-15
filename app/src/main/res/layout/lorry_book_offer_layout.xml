@@ -113,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rounded_button"
+            android:background="#26A8FA"
             android:gravity="center"
             android:text="@string/send_offer"
             android:textColor="@color/white"
