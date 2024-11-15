@@ -210,7 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:background="@drawable/rounded_button"
+            android:background="#26A8FA"
             android:gravity="center"
             android:padding="5dp"
             android:text="@string/bid"
