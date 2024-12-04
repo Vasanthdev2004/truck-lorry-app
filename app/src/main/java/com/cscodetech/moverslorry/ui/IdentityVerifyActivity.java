@@ -1,8 +1,8 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.FileUtils.createPartFromString;
-import static com.cscodetech.moverslorry.utils.FileUtils.prepareFilePart;
+import static com.ruru.routelorry.utils.FileUtils.createPartFromString;
+import static com.ruru.routelorry.utils.FileUtils.prepareFilePart;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,12 +28,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.RestResponse;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.RestResponse;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.Utility;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 

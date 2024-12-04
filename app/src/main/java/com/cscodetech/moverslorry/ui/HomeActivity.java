@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import android.Manifest;
 import android.app.ActivityManager;
@@ -15,10 +15,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.fragment.HomeFragment;
-import com.cscodetech.moverslorry.fragment.ProfileFragment;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.fragment.HomeFragment;
+import com.ruru.routelorry.fragment.ProfileFragment;
+import com.ruru.routelorry.utils.Utility;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;

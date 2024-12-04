@@ -1,7 +1,7 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.SessionManager.login;
+import static com.ruru.routelorry.utils.SessionManager.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,17 +14,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.Login;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.Login;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.Utility;
 import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -117,13 +118,18 @@ public class VerificationActivity extends BaseActivity implements GetResult.MyLi
     }
 
     private void sendVerificationCode(String number) {
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                number,
-                60,
-                TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
-                mCallBack
-        );
+        PhoneAuthOptions options =
+                PhoneAuthOptions.newBuilder(mAuth)
+                        .setPhoneNumber(number)       // Phone number to verify
+                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                        .setActivity(this)                 // (optional) Activity for callback binding
+                        // If no activity is passed, reCAPTCHA verification can not be used.
+                        .setCallbacks(mCallBack)          // OnVerificationStateChangedCallbacks
+                        .build();
+        PhoneAuthProvider.verifyPhoneNumber(options);
+
+
+
     }
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks

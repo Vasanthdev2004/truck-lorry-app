@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.fragment;
+package com.ruru.routelorry.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.cscodetech.moverslorry.R;
+import com.ruru.routelorry.R;
 
 public class TwoFragment extends Fragment {
 

@@ -1,8 +1,8 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.SessionManager.intro;
-import static com.cscodetech.moverslorry.utils.SessionManager.login;
+import static com.ruru.routelorry.utils.SessionManager.intro;
+import static com.ruru.routelorry.utils.SessionManager.login;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -19,12 +19,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.fragment.OneFragment;
-import com.cscodetech.moverslorry.fragment.TreeFragment;
-import com.cscodetech.moverslorry.fragment.TwoFragment;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.fragment.OneFragment;
+import com.ruru.routelorry.fragment.TreeFragment;
+import com.ruru.routelorry.fragment.TwoFragment;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.utils.SessionManager;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;

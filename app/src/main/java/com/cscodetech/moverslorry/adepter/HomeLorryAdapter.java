@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.adepter;
+package com.ruru.routelorry.adepter;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -18,10 +18,10 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.BidLorryDataItem;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.ui.AddLorryActivity;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.BidLorryDataItem;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.ui.AddLorryActivity;
 
 import java.util.List;
 

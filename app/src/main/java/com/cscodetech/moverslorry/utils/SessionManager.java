@@ -1,10 +1,10 @@
-package com.cscodetech.moverslorry.utils;
+package com.ruru.routelorry.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.cscodetech.moverslorry.model.UserLogin;
+import com.ruru.routelorry.model.UserLogin;
 import com.google.gson.Gson;
 
 

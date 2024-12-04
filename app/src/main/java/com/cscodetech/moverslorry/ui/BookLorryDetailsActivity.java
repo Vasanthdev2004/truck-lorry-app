@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,14 +17,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.LoadDetailMain;
-import com.cscodetech.moverslorry.model.RestResponse;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.SessionManager;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.LoadDetailMain;
+import com.ruru.routelorry.model.RestResponse;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.SessionManager;
+import com.ruru.routelorry.utils.Utility;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.gson.Gson;

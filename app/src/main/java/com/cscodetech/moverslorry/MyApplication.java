@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry;
+package com.ruru.routelorry;
 
 import android.app.Application;
 
@@ -17,7 +17,7 @@ public class MyApplication extends Application {
 
             // OneSignal Initialization
             OneSignal.initWithContext(this);
-            OneSignal.setAppId("*****************************************");
+            OneSignal.setAppId("7173ee47-3438-4ba4-a267-301344a68504");
     }
 
 

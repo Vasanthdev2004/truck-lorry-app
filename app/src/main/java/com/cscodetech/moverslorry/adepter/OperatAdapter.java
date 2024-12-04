@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.adepter;
+package com.ruru.routelorry.adepter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,10 +10,10 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.StatelistItem;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.StatelistItem;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.utils.SessionManager;
 
 import java.util.List;
 

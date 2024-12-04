@@ -1,12 +1,12 @@
-package com.cscodetech.moverslorry.fragment;
+package com.ruru.routelorry.fragment;
 
 
-import static com.cscodetech.moverslorry.utils.FileUtils.createPartFromString;
-import static com.cscodetech.moverslorry.utils.FileUtils.prepareFilePart;
-import static com.cscodetech.moverslorry.utils.SessionManager.intro;
-import static com.cscodetech.moverslorry.utils.SessionManager.language;
-import static com.cscodetech.moverslorry.utils.SessionManager.login;
-import static com.cscodetech.moverslorry.utils.SessionManager.wallet;
+import static com.ruru.routelorry.utils.FileUtils.createPartFromString;
+import static com.ruru.routelorry.utils.FileUtils.prepareFilePart;
+import static com.ruru.routelorry.utils.SessionManager.intro;
+import static com.ruru.routelorry.utils.SessionManager.language;
+import static com.ruru.routelorry.utils.SessionManager.login;
+import static com.ruru.routelorry.utils.SessionManager.wallet;
 
 import android.app.Activity;
 import android.content.Context;
@@ -31,21 +31,21 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.Help;
-import com.cscodetech.moverslorry.model.Login;
-import com.cscodetech.moverslorry.model.Pages;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.ui.FaqActivity;
-import com.cscodetech.moverslorry.ui.HelpDetailsActivity;
-import com.cscodetech.moverslorry.ui.HomeActivity;
-import com.cscodetech.moverslorry.ui.LoginActivity;
-import com.cscodetech.moverslorry.ui.ReviewActivity;
-import com.cscodetech.moverslorry.ui.WalletActivity;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.Help;
+import com.ruru.routelorry.model.Login;
+import com.ruru.routelorry.model.Pages;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.ui.FaqActivity;
+import com.ruru.routelorry.ui.HelpDetailsActivity;
+import com.ruru.routelorry.ui.HomeActivity;
+import com.ruru.routelorry.ui.LoginActivity;
+import com.ruru.routelorry.ui.ReviewActivity;
+import com.ruru.routelorry.ui.WalletActivity;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.SessionManager;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textfield.TextInputEditText;

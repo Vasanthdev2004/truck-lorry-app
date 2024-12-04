@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.model;
+package com.ruru.routelorry.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

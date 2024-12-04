@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.fragment;
+package com.ruru.routelorry.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,16 +13,16 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.adepter.MyLoadAdapter;
-import com.cscodetech.moverslorry.model.LoadHistoryDataItem;
-import com.cscodetech.moverslorry.model.MyLoad;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.ui.MyLoadDetailsActivity;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.SessionManager;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.adepter.MyLoadAdapter;
+import com.ruru.routelorry.model.LoadHistoryDataItem;
+import com.ruru.routelorry.model.MyLoad;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.ui.MyLoadDetailsActivity;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.SessionManager;
+import com.ruru.routelorry.utils.Utility;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 

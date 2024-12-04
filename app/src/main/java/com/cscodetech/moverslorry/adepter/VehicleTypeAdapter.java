@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.adepter;
+package com.ruru.routelorry.adepter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.FindLoadDataItem;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.FindLoadDataItem;
+import com.ruru.routelorry.utils.SessionManager;
 
 import java.util.List;
 

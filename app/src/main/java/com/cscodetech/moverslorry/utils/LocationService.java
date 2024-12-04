@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.utils;
+package com.ruru.routelorry.utils;
 
 
 import android.Manifest;
@@ -24,7 +24,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
-import org.checkerframework.checker.nullness.qual.Nullable;
+
 
 public class LocationService extends Service {
 
@@ -89,7 +89,7 @@ public class LocationService extends Service {
         locationClient.removeLocationUpdates(locationCallback);
     }
 
-    @Nullable
+
     @Override
     public IBinder onBind(Intent intent) {
         return null;

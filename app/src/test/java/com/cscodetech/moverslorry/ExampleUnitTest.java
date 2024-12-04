@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry;
+package com.ruru.routelorry;
 
 import org.junit.Test;
 

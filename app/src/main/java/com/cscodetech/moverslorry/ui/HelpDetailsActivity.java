@@ -1,11 +1,11 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.TextView;
 
-import com.cscodetech.moverslorry.R;
+import com.ruru.routelorry.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

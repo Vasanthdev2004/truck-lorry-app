@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.model;
+package com.ruru.routelorry.model;
 
 import java.io.Serializable;
 

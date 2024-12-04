@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.adepter;
+package com.ruru.routelorry.adepter;
 
 import android.content.Context;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
 import android.content.Intent;
@@ -12,12 +12,12 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.Contry;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.Contry;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.Utility;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.retrofit;
+package com.ruru.routelorry.retrofit;
 
 
 import java.util.concurrent.TimeUnit;
@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
 
-    public static final String BASE_URL = "https://movers.cscodetech.cloud/";
+    public static final String BASE_URL = "http://apps.rururoute.com/";
     public static final String APPEND_URL = "/lorry_api/";
 
     private APIClient() {

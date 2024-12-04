@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.adepter;
+package com.ruru.routelorry.adepter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,9 +13,10 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.BannerItem;
-import com.cscodetech.moverslorry.retrofit.APIClient;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.BannerItem;
+import com.ruru.routelorry.retrofit.APIClient;
+
 
 import java.util.List;
 

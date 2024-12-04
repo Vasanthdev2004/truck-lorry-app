@@ -1,8 +1,8 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.SessionManager.intro;
-import static com.cscodetech.moverslorry.utils.SessionManager.login;
+import static com.ruru.routelorry.utils.SessionManager.intro;
+import static com.ruru.routelorry.utils.SessionManager.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,13 +15,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.Contry;
-import com.cscodetech.moverslorry.model.Login;
-import com.cscodetech.moverslorry.model.RestResponse;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.Contry;
+import com.ruru.routelorry.model.Login;
+import com.ruru.routelorry.model.RestResponse;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;

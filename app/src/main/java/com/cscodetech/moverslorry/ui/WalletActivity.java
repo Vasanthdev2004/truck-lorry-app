@@ -1,8 +1,8 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.SessionManager.currency;
-import static com.cscodetech.moverslorry.utils.SessionManager.wallet;
+import static com.ruru.routelorry.utils.SessionManager.currency;
+import static com.ruru.routelorry.utils.SessionManager.wallet;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -22,17 +22,17 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.model.EarningData;
-import com.cscodetech.moverslorry.model.Payout;
-import com.cscodetech.moverslorry.model.PayoutlistItem;
-import com.cscodetech.moverslorry.model.RestResponse;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.SessionManager;
-import com.cscodetech.moverslorry.utils.Utility;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.model.EarningData;
+import com.ruru.routelorry.model.Payout;
+import com.ruru.routelorry.model.PayoutlistItem;
+import com.ruru.routelorry.model.RestResponse;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.SessionManager;
+import com.ruru.routelorry.utils.Utility;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

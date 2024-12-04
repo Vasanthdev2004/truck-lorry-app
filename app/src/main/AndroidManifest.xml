@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cscodetech.moverslorry">
+    package="com.ruru.routelorry">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -10,6 +10,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -37,7 +38,7 @@
     </queries>
 
     <application
-        android:name="com.cscodetech.moverslorry.MyApplication"
+        android:name="com.ruru.routelorry.MyApplication"
         android:allowBackup="true"
 
         android:fullBackupContent="false"
@@ -48,76 +49,76 @@
         android:theme="@style/Theme.Shipment"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.cscodetech.moverslorry.ui.MyLoadDetailsActivity"
+            android:name="com.ruru.routelorry.ui.MyLoadDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.FaqActivity"
+            android:name="com.ruru.routelorry.ui.FaqActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.ReviewActivity"
+            android:name="com.ruru.routelorry.ui.ReviewActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.ChanegPasswordActivity"
+            android:name="com.ruru.routelorry.ui.ChanegPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.HelpDetailsActivity"
+            android:name="com.ruru.routelorry.ui.HelpDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.AddLorryActivity"
+            android:name="com.ruru.routelorry.ui.AddLorryActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.AddLorryTwoActivity"
+            android:name="com.ruru.routelorry.ui.AddLorryTwoActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.AddLorryThreeActivity"
+            android:name="com.ruru.routelorry.ui.AddLorryThreeActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.NearLoadActivity"
+            android:name="com.ruru.routelorry.ui.NearLoadActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.MyLoadActivity"
+            android:name="com.ruru.routelorry.ui.MyLoadActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.FindLoadActivity"
+            android:name="com.ruru.routelorry.ui.FindLoadActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.HomeActivity"
+            android:name="com.ruru.routelorry.ui.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.LoginActivity"
+            android:name="com.ruru.routelorry.ui.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.SignUpActivity"
+            android:name="com.ruru.routelorry.ui.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.VerificationActivity"
+            android:name="com.ruru.routelorry.ui.VerificationActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.ForgotPasswordActivity"
+            android:name="com.ruru.routelorry.ui.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.BaseActivity"
+            android:name="com.ruru.routelorry.ui.BaseActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.BookLorryDetailsActivity"
+            android:name="com.ruru.routelorry.ui.BookLorryDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.MyBookLoadActivity"
+            android:name="com.ruru.routelorry.ui.MyBookLoadActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.WalletActivity"
+            android:name="com.ruru.routelorry.ui.WalletActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.IdentityVerifyActivity"
+            android:name="com.ruru.routelorry.ui.IdentityVerifyActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.NotificationActivity"
+            android:name="com.ruru.routelorry.ui.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.BiderInfoActivity"
+            android:name="com.ruru.routelorry.ui.BiderInfoActivity"
             android:exported="false" />
         <activity
-            android:name="com.cscodetech.moverslorry.ui.IntroActivity"
+            android:name="com.ruru.routelorry.ui.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -130,7 +131,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name="com.cscodetech.moverslorry.utils.LocationService"
+            android:name="com.ruru.routelorry.utils.LocationService"
             android:foregroundServiceType="location" />
         <receiver
             android:name="com.razorpay.RzpTokenReceiver"

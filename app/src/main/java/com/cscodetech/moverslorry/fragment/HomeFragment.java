@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.fragment;
+package com.ruru.routelorry.fragment;
 
 
 import static androidx.recyclerview.widget.LinearLayoutManager.VERTICAL;
@@ -23,24 +23,24 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.bumptech.glide.Glide;
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.adepter.BannerAdapter;
-import com.cscodetech.moverslorry.adepter.HomeLorryAdapter;
-import com.cscodetech.moverslorry.adepter.OperatAdapter;
-import com.cscodetech.moverslorry.model.Home;
-import com.cscodetech.moverslorry.model.HomeData;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.ui.AddLorryActivity;
-import com.cscodetech.moverslorry.ui.FindLoadActivity;
-import com.cscodetech.moverslorry.ui.HomeActivity;
-import com.cscodetech.moverslorry.ui.IdentityVerifyActivity;
-import com.cscodetech.moverslorry.ui.NearLoadActivity;
-import com.cscodetech.moverslorry.ui.NotificationActivity;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
-import com.cscodetech.moverslorry.utils.CustomRecyclerView;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.adepter.BannerAdapter;
+import com.ruru.routelorry.adepter.HomeLorryAdapter;
+import com.ruru.routelorry.adepter.OperatAdapter;
+import com.ruru.routelorry.model.Home;
+import com.ruru.routelorry.model.HomeData;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.ui.AddLorryActivity;
+import com.ruru.routelorry.ui.FindLoadActivity;
+import com.ruru.routelorry.ui.HomeActivity;
+import com.ruru.routelorry.ui.IdentityVerifyActivity;
+import com.ruru.routelorry.ui.NearLoadActivity;
+import com.ruru.routelorry.ui.NotificationActivity;
+import com.ruru.routelorry.utils.CustPrograssbar;
+import com.ruru.routelorry.utils.CustomRecyclerView;
+import com.ruru.routelorry.utils.SessionManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;

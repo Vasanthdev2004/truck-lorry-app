@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.utils;
+package com.ruru.routelorry.utils;
 
 import android.content.Context;
 import android.os.Handler;

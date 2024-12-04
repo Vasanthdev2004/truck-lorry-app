@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.fragment.CompletLoadFragment;
-import com.cscodetech.moverslorry.fragment.CurrentLoadFragment;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.fragment.CompletLoadFragment;
+import com.ruru.routelorry.fragment.CurrentLoadFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;

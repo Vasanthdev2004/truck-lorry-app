@@ -1,7 +1,7 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 
-import static com.cscodetech.moverslorry.utils.SessionManager.language;
+import static com.ruru.routelorry.utils.SessionManager.language;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -13,8 +13,8 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.utils.SessionManager;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.utils.SessionManager;
 
 import java.util.Locale;
 

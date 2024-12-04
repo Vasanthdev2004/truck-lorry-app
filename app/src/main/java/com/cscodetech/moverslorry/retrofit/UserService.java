@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.retrofit;
+package com.ruru.routelorry.retrofit;
 
 
 import com.google.gson.JsonObject;

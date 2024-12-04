@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import android.Manifest;
 import android.app.Activity;
@@ -26,17 +26,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.adepter.LoadFindAdapter;
-import com.cscodetech.moverslorry.model.BidLorry;
-import com.cscodetech.moverslorry.model.BidLorryDataItem;
-import com.cscodetech.moverslorry.model.FindLoadDataItem;
-import com.cscodetech.moverslorry.model.LoaddataItem;
-import com.cscodetech.moverslorry.model.RestResponse;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.adepter.LoadFindAdapter;
+import com.ruru.routelorry.model.BidLorry;
+import com.ruru.routelorry.model.BidLorryDataItem;
+import com.ruru.routelorry.model.FindLoadDataItem;
+import com.ruru.routelorry.model.LoaddataItem;
+import com.ruru.routelorry.model.RestResponse;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;

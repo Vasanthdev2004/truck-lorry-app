@@ -1,4 +1,4 @@
-package com.cscodetech.moverslorry.ui;
+package com.ruru.routelorry.ui;
 
 import static androidx.recyclerview.widget.LinearLayoutManager.VERTICAL;
 
@@ -26,16 +26,16 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.cscodetech.moverslorry.R;
-import com.cscodetech.moverslorry.adepter.VehicleAdapter;
-import com.cscodetech.moverslorry.model.BidLorryDataItem;
-import com.cscodetech.moverslorry.model.TempAddLorry;
-import com.cscodetech.moverslorry.model.UserLogin;
-import com.cscodetech.moverslorry.model.Vehicle;
-import com.cscodetech.moverslorry.model.VehicleDataItem;
-import com.cscodetech.moverslorry.retrofit.APIClient;
-import com.cscodetech.moverslorry.retrofit.GetResult;
-import com.cscodetech.moverslorry.utils.CustPrograssbar;
+import com.ruru.routelorry.R;
+import com.ruru.routelorry.adepter.VehicleAdapter;
+import com.ruru.routelorry.model.BidLorryDataItem;
+import com.ruru.routelorry.model.TempAddLorry;
+import com.ruru.routelorry.model.UserLogin;
+import com.ruru.routelorry.model.Vehicle;
+import com.ruru.routelorry.model.VehicleDataItem;
+import com.ruru.routelorry.retrofit.APIClient;
+import com.ruru.routelorry.retrofit.GetResult;
+import com.ruru.routelorry.utils.CustPrograssbar;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
