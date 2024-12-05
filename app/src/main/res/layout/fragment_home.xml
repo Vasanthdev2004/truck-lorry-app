@@ -209,7 +209,7 @@
 
 
 
-                <com.cscodetech.moverslorry.utils.CustomRecyclerView
+                <com.ruru.routelorry.utils.CustomRecyclerView
                     android:id="@+id/recycler_banner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
