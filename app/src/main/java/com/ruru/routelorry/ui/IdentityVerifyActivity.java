@@ -106,7 +106,7 @@ public class IdentityVerifyActivity extends BaseActivity implements GetResult.My
         recyclerselectimg.setItemAnimator(new DefaultItemAnimator());
     }
 
-    @OnClick({R.id.img_back, R.id.btn_upload})
+    @OnClick({R.id.img_back, R.id.lvl_passport, R.id.lvl_selfe, R.id.btn_upload})
     public void onBindClick(View view) {
         switch (view.getId()) {
             case R.id.img_back:
@@ -115,8 +115,23 @@ public class IdentityVerifyActivity extends BaseActivity implements GetResult.My
             case R.id.btn_upload:
                 uploadMultiFile();
                 break;
-
-
+            case R.id.lvl_passport:
+                if (imgIsuploadp.getVisibility() == View.GONE) {
+                    selectimge = "doc";
+                    Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    launcher.launch(intent);
+                } else {
+                    Toast.makeText(IdentityVerifyActivity.this, "Document max 2 pic select", Toast.LENGTH_LONG).show();
+                }
+                break;
+            case R.id.lvl_selfe:
+                if (imgIsuploadi.getVisibility() == View.GONE) {
+                    selectimge = "self";
+                    cameraOpen();
+                } else {
+                    Toast.makeText(IdentityVerifyActivity.this, "Self 1 pic select", Toast.LENGTH_LONG).show();
+                }
+                break;
             default:
                 break;
         }
@@ -125,9 +140,36 @@ public class IdentityVerifyActivity extends BaseActivity implements GetResult.My
     }
 
 
+    private void cameraOpen() {
 
+        Intent captureImageIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (captureImageIntent.resolveActivity(getPackageManager()) != null) {
+            // Create a file to store the image
+            File imageFile = null;
+            try {
+                imageFile = createImageFile();
+            } catch (IOException ex) {
+                // Handle error
+                ex.printStackTrace();
+            }
+            if (imageFile != null) {
+                // Get the URI for the file
+                imageUri = FileProvider.getUriForFile(this, getPackageName() + ".provider", imageFile);
+                // Add the URI as an extra to the intent
+                captureImageIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+                // Launch the camera app with the intent
+                launcher.launch(captureImageIntent);
+            }
+        }
+    }
 
-
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        return File.createTempFile(imageFileName, ".jpg", storageDir);
+    }
 
     String images = "images";
     String image = "image";
@@ -217,7 +259,42 @@ public class IdentityVerifyActivity extends BaseActivity implements GetResult.My
 
 
     Uri imageUri;
+    ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == Activity.RESULT_OK) {
+                    Uri imageUrit;
 
+                    if (result != null && result.getData() != null) {
+                        imageUrit = result.getData().getData();
+                    } else {
+                        imageUrit = imageUri;
+                    }
+                    try (InputStream inputStream = getContentResolver().openInputStream(imageUrit)) {
+                        File outputDir = getApplicationContext().getFilesDir();
+                        File outputFile = File.createTempFile(image, null, outputDir);
+                        try (OutputStream outputStream = new FileOutputStream(outputFile)) {
+                            byte[] buffer = new byte[1024];
+                            int bytesRead;
+                            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                                outputStream.write(buffer, 0, bytesRead);
+                            }
+                        }
+
+                        // Get the file path of the saved image file
+                        String filePath = outputFile.getAbsolutePath();
+                        if (filePath != null) {
+                            Imagemode imagemode = new Imagemode();
+                            imagemode.setImg(filePath);
+                            imagemode.setType(selectimge);
+                            arrayListImage.add(imagemode);
+                            postImage(arrayListImage);
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            });
 
     public void postImage(List<Imagemode> urilist) {
         ImageAdp imageAdp = new ImageAdp(urilist);
